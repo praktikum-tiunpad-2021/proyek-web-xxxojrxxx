@@ -29,9 +29,9 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Janie Doe   |
+| 140810xx0022  | Osmond Haylim    |
+| 140810xx0024  | Jonathan Victor Goklas    |
+| 140810xx0064  | Muhammad Ariiq Rakha Shafa   |
 
 <!-- Fungsi -->
 ## Fungsi
