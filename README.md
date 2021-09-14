@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="logo_ntn.ko.png" alt="Logo" size - "50%">
+    <img src="logo ntn.ko with bg.png" alt="Logo" size - "50%">
   </a>
 
   <h3 align="center">ntn.ko</h3>
