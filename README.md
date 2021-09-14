@@ -51,9 +51,7 @@ Pecinta film dan drama korea.
 <!-- Mockup Kasar -->
 ## Mockup Kasar
 
-TO;DO
-
-Gambar mockup di sini atau [link figma](https://figma.com/).
+Gambar mockup di sini atau [link figma](https://www.figma.com/file/i0qXfGOCSH8dwJtlADWlym/xXxOJRxXx-Mockup?node-id=0%3A1).
 
 <!-- Skema Database -->
 ## Skema Database
