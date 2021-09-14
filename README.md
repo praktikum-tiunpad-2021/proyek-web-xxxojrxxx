@@ -2,10 +2,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://via.placeholder.com/80/FFFFFF/808080?text=Logo" alt="Logo" width="80" height="80">
+    <img src="https://media.discordapp.net/attachments/412931424069484544/887377667417051196/logo_ntn.ko.png?width=900&height=360" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Judul Proyek</h3>
+  <h3 align="center">On-Demand Korean Streaming Website</h3>
 
   <p align="center">
     Deskripsi Proyek
