@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://media.discordapp.net/attachments/412931424069484544/887377667417051196/logo_ntn.ko.png?width=900&height=360" alt="Logo">
+    <img src="schemadatabasebg.drawio.png" alt="Logo">
   </a>
 
   <h3 align="center">ntn.ko</h3>
