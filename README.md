@@ -36,17 +36,17 @@
 <!-- Fungsi -->
 ## Fungsi
 
-TO;DO
+Sebagai Platform bagi para pecinta entertainment Korea dengan menyediakan berbagai Drama dan Film Korea berbahasa Indonesia.
 
 <!-- Tujuan -->
 ## Tujuan
 
-TO;DO
+Memenuhi tugas project praktikum pemrograman web serta untuk dikembangkan lagi dikemudian hari.
 
 <!-- Target Pengguna -->
 ## Target Pengguna
 
-TO;DO
+Pecinta film dan drama korea.
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
