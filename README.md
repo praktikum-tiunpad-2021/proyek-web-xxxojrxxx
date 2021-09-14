@@ -29,9 +29,9 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx0022  | Osmond Haylim    |
-| 140810xx0024  | Jonathan Victor Goklas    |
-| 140810xx0064  | Muhammad Ariiq Rakha Shafa   |
+| 140810200022  | Osmond Haylim    |
+| 140810200024  | Jonathan Victor Goklas    |
+| 140810200064  | Muhammad Ariiq Rakha Shafa   |
 
 <!-- Fungsi -->
 ## Fungsi
