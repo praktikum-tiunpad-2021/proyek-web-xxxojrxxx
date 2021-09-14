@@ -5,10 +5,10 @@
     <img src="https://media.discordapp.net/attachments/412931424069484544/887377667417051196/logo_ntn.ko.png?width=900&height=360" alt="Logo">
   </a>
 
-  <h3 align="center">On-Demand Korean Streaming Website</h3>
+  <h3 align="center">ntn.ko</h3>
 
   <p align="center">
-    Deskripsi Proyek
+    On-Demand Korean Streaming Website
   </p>
 </p>
 
