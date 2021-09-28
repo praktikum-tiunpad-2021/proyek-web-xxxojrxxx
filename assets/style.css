@@ -48,6 +48,7 @@ body{
     display: flex;
     align-items: center;
     color: #F7971D;
+    padding-left: 1em;
 }
 
 .sign-up {
@@ -91,6 +92,13 @@ body{
 }
 
 .input-login {
-    opacity: 1;
+    opacity: 0.5;
     color: #FFFFFF;
+    background: rgba(20, 20, 20, 0.9);
+    border-bottom: #FFFFFF 1px;
+    border-top: rgba(20, 20, 20, 0.9);
+    border-left: rgba(20, 20, 20, 0.9);
+    border-right: rgba(20, 20, 20, 0.9);
+    width: 32em;
+    height: 3em;
 }
