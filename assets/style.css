@@ -5,9 +5,9 @@
 
     background: rgba(20, 20, 20, 0.9);
     border-radius: 30px;
-
 }
 
+ 
 .logos{
     width: 250px;
     height: 123.25px;
@@ -22,3 +22,37 @@ body{
     background-size: 100% 100%;
 }
 
+.judul-form{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #F7971D;
+}
+
+.signin-btn{
+    
+    width: 300px;
+    height: 56.57px;
+    left: 810px;
+    top: 653.9px;
+    background: #F7971D;
+    border-radius: 30px;
+}
+
+.signin-font{
+    font-family: Roboto;
+    margin: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
