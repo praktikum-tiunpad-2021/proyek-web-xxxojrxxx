@@ -92,13 +92,10 @@ body{
 }
 
 .input-login {
-    opacity: 0.5;
+    outline: 0;
+    border-width: 0 0 2px;
     color: #FFFFFF;
     background: rgba(20, 20, 20, 0.9);
-    border-bottom: #FFFFFF 1px;
-    border-top: rgba(20, 20, 20, 0.9);
-    border-left: rgba(20, 20, 20, 0.9);
-    border-right: rgba(20, 20, 20, 0.9);
     width: 32em;
     height: 3em;
 }
