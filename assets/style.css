@@ -1,0 +1,24 @@
+.login-div{
+    width: 550px;
+    height: 650px;
+    margin: auto;
+
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 30px;
+
+}
+
+.logos{
+    width: 250px;
+    height: 123.25px;
+}
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
