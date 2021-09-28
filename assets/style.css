@@ -1,16 +1,33 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src:url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src:url("fonts/montserrat.regular.ttf");
+}
+
 .login-div{
-    width: 550px;
-    height: 650px;
+    width: 35em;
+    height: 42em;
     margin: auto;
 
     background: rgba(20, 20, 20, 0.9);
     border-radius: 30px;
 }
 
- 
+.login-form {
+    padding: 4em;
+}
+
+.box-logo {
+    text-align: center;
+}
+
 .logos{
-    width: 250px;
-    height: 123.25px;
+    width: 60%;
+    height: 60%;
 }
 body{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.png);
@@ -23,7 +40,7 @@ body{
 }
 
 .judul-form{
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -33,26 +50,47 @@ body{
     color: #F7971D;
 }
 
+.sign-up {
+    margin-top: 6em;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 0.9em;
+}
+
+.sign-in {
+    text-align: center;
+    font-family: Montserrat-Bold;
+}
+
 .signin-btn{
-    
-    width: 300px;
-    height: 56.57px;
-    left: 810px;
-    top: 653.9px;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 7.5em;
+    padding-right: 7.5em;
     background: #F7971D;
-    border-radius: 30px;
+    border-radius: 2em;
 }
 
 .signin-font{
-    font-family: Roboto;
+    text-align: center;
+    font-family: Montserrat-Bold;
     margin: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.6em;
     line-height: 35px;
     display: flex;
     align-items: center;
     text-align: center;
+    color: #FFFFFF;
+}
 
+.register-btn {
+    color: #F7971D;
+    text-decoration: none;
+}
+
+.input-login {
+    opacity: 1;
     color: #FFFFFF;
 }
