@@ -7,55 +7,75 @@
     font-family: Montserrat-Regular;
     src:url("fonts/montserrat.regular.ttf");
 }
-
-.login-div{
-    width: 35em;
-    height: 42em;
-    margin: auto;
-
-    background: rgba(20, 20, 20, 0.9);
-    border-radius: 30px;
-}
-
-.login-form {
-    padding: 4em;
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 .box-logo {
     text-align: center;
 }
 
-.logos{
-    width: 60%;
-    height: 60%;
-}
-body{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.png);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+.input-login {
+    outline: 0;
+    border-width: 0 0 2px;
+    color: #FFFFFF;
+    background: rgba(20, 20, 20, 0.9);
+    width: 27vw;
+    height: 2vw;
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-size: 2vw;
 }
 
 .judul-form{
     font-family: Montserrat-Bold;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 2vw;
+    line-height: 10px;
     display: flex;
     align-items: center;
     color: #F7971D;
-    padding-left: 1em;
+    padding-left: 1vw;
 }
 
-.sign-up {
-    margin-top: 6em;
-    text-align: center;
-    font-family: Montserrat-Bold;
-    font-size: 0.9em;
+.login-div{
+    width: 33vw;
+    height: 39vw;
+    margin: auto;
+    margin-top: 3vw;
+    padding-bottom: 1vw;
+    
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 30px;
+}
+
+.login-form {
+    padding: 3vw;
+    padding-top: 0.7vw;
+    position: relative;
+    margin: 6% auto;
+}
+
+.logos{
+    width: 50%;
+    height: 50%;
+    margin-top: 3vw;
+}
+
+.register-btn {
+    color: #F7971D;
+    text-decoration: none;
+}
+.register-btn:hover {
+    color: #fafafa;
+    text-decoration: none;
 }
 
 .sign-in {
@@ -64,12 +84,20 @@ body{
 }
 
 .signin-btn{
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-    padding-left: 7.5em;
-    padding-right: 7.5em;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
     background: #F7971D;
-    border-radius: 2em;
+    border-radius: 2vw;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 77%;
+}
+.signin-btn:hover{
+    padding-left: 7.9vw;
+    padding-right: 7.9vw;
+    width: 80%;  
 }
 
 .signin-font{
@@ -78,24 +106,17 @@ body{
     margin: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.6em;
-    line-height: 35px;
+    font-size: 1.6vw;
+    line-height: 3vw;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
 
-.register-btn {
-    color: #F7971D;
-    text-decoration: none;
-}
-
-.input-login {
-    outline: 0;
-    border-width: 0 0 2px;
-    color: #FFFFFF;
-    background: rgba(20, 20, 20, 0.9);
-    width: 32em;
-    height: 3em;
+.sign-up {
+    margin-top: 2vw;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 1vw;
 }
