@@ -55,4 +55,4 @@ Gambar mockup di sini atau [link figma](https://www.figma.com/file/i0qXfGOCSH8dw
 
 <!-- Skema Database -->
 ## Skema Database
-<img src="schemadatabasebg.drawio.png" alt="Schema">
+<img src="public/Assets/image/schemadatabasebg.drawio.png" alt="Schema">
