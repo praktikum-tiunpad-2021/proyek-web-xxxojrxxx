@@ -1,60 +1,137 @@
 @font-face {
     font-family: Montserrat-Bold;
-    src:url("fonts/Montserrat-Bold.ttf");
+    src:url("../fonts/Montserrat-Bold.ttf");
 }
-
 @font-face {
     font-family: Montserrat-Regular;
-    src:url("fonts/montserrat.regular.ttf");
+    src:url("../fonts/montserrat.regular.ttf");
 }
 
-.login-div{
-    width: 35em;
-    height: 42em;
-    margin: auto;
-
-    background: rgba(20, 20, 20, 0.9);
-    border-radius: 30px;
-}
-
-.login-form {
-    padding: 4em;
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 .box-logo {
     text-align: center;
 }
 
-.logos{
-    width: 60%;
-    height: 60%;
+.check-remember-password{
+    cursor: pointer;
+    margin: 2vh 2vw;
+    padding: 1vh 1vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #F7971D;
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-size: 1em;
 }
-body{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.png);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+
+/* Buat ilangin checkbox */
+.check-remember-password input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* checklist */
+.check-remember-password .remember-password:after {
+    width: 5px;
+    height: 10px;
+    border: solid #F7971D;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check-remember-password:checked ~ .remember-password:after {
+    display: block;
+}
+
+.input-login {
+    outline: 0;
+    border-width: 0 0 2px;
+    color: #FFFFFF;
+    background: rgba(20, 20, 20, 0.9);
+    width: 27vw;
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-size: 1.5em;
 }
 
 .judul-form{
     font-family: Montserrat-Bold;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.5em;
+    line-height: 0px;
     display: flex;
     align-items: center;
     color: #F7971D;
+    padding-left: 1.5vw;
 }
 
-.sign-up {
-    margin-top: 6em;
-    text-align: center;
-    font-family: Montserrat-Bold;
-    font-size: 0.9em;
+.login-div{
+    width: 33vw;
+    margin: auto;
+    margin-top: 10vh;
+    padding-bottom: 1vh;
+    
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 30px;
+}
+
+.login-form {
+    padding: 3vw;
+    padding-top: 1vh;
+    position: relative;
+    margin: 6% auto;
+}
+
+.logos{
+    width: 50%;
+    height: 50%;
+    margin-top: 3vh;
+}
+
+.register-btn {
+    color: #F7971D;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+/* Custom Checkbox */
+.remember-password{
+    right: 10px;
+    position: relative;
+    padding: 0px 10px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #F7971D;
+    border-radius: 8px;
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.remember-password:after {
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 .sign-in {
@@ -63,12 +140,21 @@ body{
 }
 
 .signin-btn{
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-    padding-left: 7.5em;
-    padding-right: 7.5em;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
     background: #F7971D;
-    border-radius: 2em;
+    border-radius: 1.5em;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.signin-btn:hover{
+    padding-top: 0.6vh;
+    padding-bottom: 0.6vh;
+    padding-left: 9vw;
+    padding-right: 9vw;  
 }
 
 .signin-font{
@@ -77,20 +163,17 @@ body{
     margin: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.6em;
-    line-height: 35px;
+    font-size: 1.5em;
+    line-height: 2.5em;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
 
-.register-btn {
-    color: #F7971D;
-    text-decoration: none;
-}
-
-.input-login {
-    opacity: 1;
-    color: #FFFFFF;
+.sign-up {
+    margin-top: 2vh;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 1em;
 }
