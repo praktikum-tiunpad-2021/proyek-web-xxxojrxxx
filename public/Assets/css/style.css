@@ -15,10 +15,11 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    padding: 4%;
 }
 
 .box-logo {
-    text-align: center;
+    position: relative;
 }
 
 .check-remember-password{
@@ -35,6 +36,10 @@ body{
     font-size: 1em;
 }
 
+.check-remember-password:hover{
+    color: #fafafa;
+}
+
 /* Buat ilangin checkbox */
 .check-remember-password input {
     position: absolute;
@@ -44,11 +49,18 @@ body{
     width: 0;
 }
 
+.check-remember-password input:checked ~ .remember-password {
+    background-color: #F7971D;
+}
+
 /* checklist */
 .check-remember-password .remember-password:after {
+    position: absolute;
+    left: 9px;
+    top: 5px;
     width: 5px;
     height: 10px;
-    border: solid #F7971D;
+    border: solid rgba(20, 20, 20, 0.9);
     border-width: 0 3px 3px 0;
     border-radius: 2px;
     -webkit-transform: rotate(45deg);
@@ -56,7 +68,7 @@ body{
     transform: rotate(45deg);
 }
 
-.check-remember-password:checked ~ .remember-password:after {
+.check-remember-password input:checked ~ .remember-password:after {
     display: block;
 }
 
@@ -86,7 +98,7 @@ body{
 .login-div{
     width: 33vw;
     margin: auto;
-    margin-top: 10vh;
+    padding-top: 3vh;
     padding-bottom: 1vh;
     
     background: rgba(20, 20, 20, 0.9);
@@ -94,6 +106,7 @@ body{
 }
 
 .login-form {
+    text-align: center;
     padding: 3vw;
     padding-top: 1vh;
     position: relative;
@@ -101,9 +114,7 @@ body{
 }
 
 .logos{
-    width: 50%;
-    height: 50%;
-    margin-top: 3vh;
+    width: 10em;
 }
 
 .register-btn {
@@ -132,6 +143,10 @@ body{
     content: "";
     position: absolute;
     display: none;
+}
+
+.remember-password:hover{
+    border: 2px solid #fafafa;
 }
 
 .sign-in {
