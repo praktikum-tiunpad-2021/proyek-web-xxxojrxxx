@@ -18,6 +18,17 @@ body{
     padding: 4%;
 }
 
+h1{
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 0px;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
 .box-logo {
     position: relative;
 }
@@ -80,7 +91,7 @@ body{
     outline: 0;
     border-width: 0 0 2px;
     color: #FFFFFF;
-    background: rgba(20, 20, 20, 0.9);
+    background: rgba(20, 20, 20, 0);
     width: 27vw;
     font-family: Montserrat-Bold;
     font-style: normal;
