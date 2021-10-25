@@ -11,7 +11,7 @@
 
     <title>ntn.ko</title>
 
-    <link rel="stylesheet" href="../../public/Assets/css/style.css">
+    <link rel="stylesheet" href="/Assets/css/style.css">
 
     </head>
 
@@ -23,7 +23,7 @@
     <div class="login-div">
         <div class="login-form">
             <div class="box-logo">
-                <img class="logos" src="../../public/Assets/image/logo ntn.ko.png" alt="">
+                <img class="logos" src="/Assets/image/logo ntn.ko.png" alt="">
             </div>
             <div class="form">
                 <div class="username">
