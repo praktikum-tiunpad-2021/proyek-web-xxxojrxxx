@@ -231,3 +231,22 @@ h1{
     background: rgba(20, 20, 20, 0.9);
     border-radius: 30px;
 }
+
+.sign-up-landing{
+    width: 35vw;
+    height: 3.5em;
+    padding-left: 2em;
+    font-family: Montserrat-Regular;
+}
+
+.signup-mid {
+    margin: auto;
+}
+
+.signup-btn {
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 1vw;
+    padding-right: 4vw;
+    background: #F7971D;
+}
