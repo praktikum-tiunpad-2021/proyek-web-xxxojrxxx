@@ -98,6 +98,17 @@ h1{
     font-size: 1.5em;
 }
 
+.input-signup {
+    outline: 0;
+    border-width: 0 0 2px;
+    color: #FFFFFF;
+    background: rgba(20, 20, 20, 0);
+    width: 47vw;
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
 .judul-form{
     font-family: Montserrat-Bold;
     font-style: normal;
@@ -119,6 +130,7 @@ h1{
     background: rgba(20, 20, 20, 0.9);
     border-radius: 30px;
 }
+
 
 .login-form {
     text-align: center;
@@ -171,6 +183,7 @@ h1{
 }
 
 .signin-btn{
+    margin-top: 1em;
     padding-top: 0.4vh;
     padding-bottom: 0.4vh;
     padding-left: 8vw;
@@ -207,4 +220,14 @@ h1{
     text-align: center;
     font-family: Montserrat-Bold;
     font-size: 1em;
+}
+
+.signup-div{
+    width: 53vw;
+    margin: auto;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 30px;
 }
