@@ -2,13 +2,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://via.placeholder.com/80/FFFFFF/808080?text=Logo" alt="Logo" width="80" height="80">
+    <img src="public/Assets/image/logo ntn.ko with bg.png" alt="Logo" size - "50%">
   </a>
 
-  <h3 align="center">Judul Proyek</h3>
+  <h3 align="center">ntn.ko</h3>
 
   <p align="center">
-    Deskripsi Proyek
+    On-Demand Korean Streaming Website
   </p>
 </p>
 
@@ -29,33 +29,30 @@
 ## Anggota Tim
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Janie Doe   |
+| 140810200022  | Osmond Haylim    |
+| 140810200024  | Jonathan Victor Goklas    |
+| 140810200064  | Muhammad Ariiq Rakha Shafa   |
 
 <!-- Fungsi -->
 ## Fungsi
 
-TO;DO
+Sebagai Platform bagi para pecinta entertainment Korea dengan menyediakan berbagai Drama dan Film Korea berbahasa Indonesia.
 
 <!-- Tujuan -->
 ## Tujuan
 
-TO;DO
+Memenuhi tugas project praktikum pemrograman web serta untuk dikembangkan lagi dikemudian hari.
 
 <!-- Target Pengguna -->
 ## Target Pengguna
 
-TO;DO
+Pecinta film dan drama korea.
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
 
-TO;DO
-
-Gambar mockup di sini atau [link figma](https://figma.com/).
+Gambar mockup di sini atau [link figma](https://www.figma.com/file/i0qXfGOCSH8dwJtlADWlym/xXxOJRxXx-Mockup?node-id=0%3A1).
 
 <!-- Skema Database -->
 ## Skema Database
-
-TO;DO
+<img src="public/Assets/image/schemadatabase.png" alt="Schema">
