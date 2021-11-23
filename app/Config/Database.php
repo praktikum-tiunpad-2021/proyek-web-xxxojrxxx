@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'CI4',
+        'database' => 'ojr',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

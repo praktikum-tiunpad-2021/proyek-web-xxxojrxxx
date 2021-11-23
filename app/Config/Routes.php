@@ -31,9 +31,10 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/login.html', 'Home::login');
-$routes->get('/signup.html', 'Home::signup');
+$routes->get('/', 'Login::index');
+$routes->get('logout', 'Login::logout');
+$routes->match(['get','post'], 'register', 'Login::register');
+$routes->get('dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------
