@@ -29,6 +29,7 @@
             <div class="box-logo">
                 <img class="logos" src="/Assets/image/logo ntn.ko.png" alt="">
             </div>
+            <h6 style="color: #ffff;" class="sign-up">Khusus admin</h6>
             <div class="form">
                 <div class="username">
                     <p class="judul-form">Email</p>
@@ -51,10 +52,7 @@
                 </div>
             <?php endif; ?>
             <div class="sign-up">
-                <p style="color: #ffff;">Tidak punya akun ?<a href="/register" class="register-btn"> Buat Akun</a></p>
-            </div>
-            <div class="sign-up">
-                <a href="/admin" class="register-btn"> Admin?</a></p>
+                <p style="color: #ffff;">Bukan Admin?<a href="/" class="register-btn"> Login Sebagai User</a></p>
             </div>
             <div class="sign-in">
                 <button type="submit" class="signin-btn"><label class="signin-font">Masuk</label></button>

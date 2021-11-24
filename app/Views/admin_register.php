@@ -16,48 +16,43 @@
     </head>
 
     <body>
-        <?php if(session()->get('success')) : ?>
-            <div role="alert">
-                <?= session()->get('success') ?>
-            </div>
-        <?php endif; ?>
+    
+    
     <!-- ***** Login Start ***** -->    
-    <form action="/" method="post"> 
-        
-    <div class="login-div">
+    <form action="/admin_register" method="post"> 
+    <div class="signup-div">
         <div class="login-form">
             <div class="box-logo">
                 <img class="logos" src="/Assets/image/logo ntn.ko.png" alt="">
             </div>
+            <h6 style="color: #ffff;" class="sign-up">Khusus admin</h6>
             <div class="form">
                 <div class="username">
                     <p class="judul-form">Email</p>
-                    <input class="input-login" type="text" name="email" id="email" value="<?= @$_COOKIE['email'] ?>">
+                    <input class="input-signup" type="text" name="email" id="email" value="<?= set_value('email') ?>">
                 </div>
                 <div class="password">
                     <p class="judul-form">Password</p>
-                    <input class="input-login" type="password" name="password" id="password" value="<?= @$_COOKIE['password'] ?>">
+                    <input class="input-signup" type="password" name="password" id="password" value="">
                 </div>
+                <div class="password">
+                    <p class="judul-form">Repeat Password</p>
+                    <input class="input-signup" type="password" name="password_confirm" id="password_confirm" value="">
+                </div>
+                <?php if(isset($validation)) : ?>
+                    <div class="sign-in" role="alert">
+                        <?= $validation->listErrors() ?>
+                    </div>
+                <?php endif; ?>
                 <div class="check-remember-username">
                     <label>
-                        <input type="checkbox" id="remember" name="remember" value="pw">
-                        <span class="remember-username">  </span>Remember Username?
+                        <input type="checkbox">
+                        <span class="remember-username">  </span>Saya sudah membaca <a href="syarat.html">syarat dan ketentuan</a>
                     </label>
                 </div>
             </div> 
-            <?php if(isset($validation)) : ?>
-                <div class="sign-up" role="alert">
-                    <?= $validation->listErrors() ?>
-                </div>
-            <?php endif; ?>
-            <div class="sign-up">
-                <p style="color: #ffff;">Tidak punya akun ?<a href="/register" class="register-btn"> Buat Akun</a></p>
-            </div>
-            <div class="sign-up">
-                <a href="/admin" class="register-btn"> Admin?</a></p>
-            </div>
             <div class="sign-in">
-                <button type="submit" class="signin-btn"><label class="signin-font">Masuk</label></button>
+                <button type="submit" class="signin-btn"><label class="signin-font">Daftar</label></button>
             </div>
         </div>
     </div>

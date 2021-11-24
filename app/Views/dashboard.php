@@ -33,14 +33,14 @@
                     </form>
                 </td>
                 <td>
-                    <a href="signup.html"><button class="signup-btn" ><label class="signin-font">DAFTAR ></label></button></a>
+                    <a href="/register"><button class="signup-btn" ><label class="signin-font">DAFTAR ></label></button></a>
                 </td>
             </tr>
         </table>
     </div>
 
     <div class="sign-in">
-        <a href="login.html"><button class="signin-btn" ><label class="signin-font">MASUK</label></button></a>
+        <a href="/"><button class="signin-btn" ><label class="signin-font">MASUK</label></button></a>
     </div>
 
 

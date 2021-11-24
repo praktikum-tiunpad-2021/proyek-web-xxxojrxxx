@@ -3,6 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 class Film_model extends Model{
     protected $table = 'vod';
+    protected $primaryKey = 'id_vod';
     public function getFilm($id = false){
         if($id === false){
             return $this->findAll();
