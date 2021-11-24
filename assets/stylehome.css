@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src:url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src:url("../fonts/montserrat.regular.ttf");
+}
+
+body{
+    background: #141414;
+}
+
+.stars-1{
+    position: absolute;
+    top: 8em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 9em;
+}
+
+.stars-2{
+    position: absolute;
+    top: 8em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 11em;
+}
+
+.stars-3{
+    position: absolute;
+    top: 8em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 13em;
+}
+
+.stars-4{
+    position: absolute;
+    top: 8em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 15em;
+}
+
+.stars-5{
+    position: absolute;
+    top: 8em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 17em;
+}
+
+.title-text{
+    position: absolute;
+    top: 10em;
+    color: #fafafa;
+    text-align: left;
+    margin-left: 9em;
+}
+
+.title-text h1{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 0.9em;
+}
+
+.title-text span{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 0.9em;
+
+}
+
+.image-home {
+    position: relative;
+    
+}
+
+.title-desc{
+    position: absolute;
+    top: 25em;
+    padding-left: 9em;
+}
+
+.title-desc-1{
+    position: absolute;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #F7971D;
+}
+
+.title-desc-2{
+    position: absolute;
+    margin-left: 10em;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #F7971D;
+}
