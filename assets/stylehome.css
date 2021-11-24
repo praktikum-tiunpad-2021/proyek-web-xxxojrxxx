@@ -11,6 +11,54 @@ body{
     background: #141414;
 }
 
+.nav__logo{
+    width: 90px;
+    object-fit: contain;
+}
+
+.nav__list{
+    color: #fafafa;
+    margin: 0px;
+    float: left;
+}
+.nav__list li {
+    list-style: none;
+    float: left;
+}
+.nav__list li a {
+    color: #fff;
+    padding: 28px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.nav__list li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: #111;
+}
+
+.container{
+    box-shadow: 0px 0px 50px 15px black;
+}
+
 .stars-1{
     position: absolute;
     top: 8em;
@@ -61,16 +109,30 @@ body{
 
 .title-text h1{
     font-weight: bold;
-    font-size: 5em;
+    font-size: 4.5em;
     line-height: 0.9em;
 }
 
-.title-text span{
+.title-text{
+    width: 250rem;
+    line-height: 1.3;
     font-weight: normal;
     font-style: normal;
+    padding-top: 0rem;
     font-size: 1em;
-    line-height: 0.9em;
+    max-width: 450px;
+    height: 180px;
+}
 
+.title-text-desc{
+    width: 250rem;
+    line-height: 1.3;
+    font-weight: normal;
+    font-style: normal;
+    padding-top: 0rem;
+    font-size: 1em;
+    max-width: 450px;
+    height: 180px;
 }
 
 .image-home {
@@ -80,8 +142,8 @@ body{
 
 .title-desc{
     position: absolute;
-    top: 25em;
-    padding-left: 9em;
+    padding-top: 0.5em;
+    padding-left: 0em;
 }
 
 .title-desc-1{
@@ -105,4 +167,58 @@ body{
     line-height: 20px;
     background: rgba(0, 0, 0, 0.6);
     color: #F7971D;
+}
+
+.row__poster{
+    width:100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.play-button{
+    position: absolute;
+    margin-top: 3.5em;
+}
+
+.watch-now{
+    background-color: transparent;
+    border: 1px solid #F7971D;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #fafafa;
+    font-weight: bold;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 0.75em;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.row-poster{
+    color: white;
+    margin-left: 20px;
 }

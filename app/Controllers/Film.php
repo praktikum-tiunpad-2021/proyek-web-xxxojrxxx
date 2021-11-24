@@ -16,9 +16,11 @@ class Film extends Controller{
     public function save(){
         $model = new Film_model();
         $data = array(
-            'Title' => $this->request->getPost('Title'),
-            'Rating' => $this->request->getPost('Rating'),
-            'Synopsis' => $this->request->getPost('Synopsis'),
+            'judul_vod' => $this->request->getPost('Title'),
+            'jenis_vod' => $this->request->getPost('Jenis'),
+            'genre_vod' => $this->request->getPost('Genre'),
+            'rating_vod' => $this->request->getPost('Rating'),
+            'desc_vod' => $this->request->getPost('Synopsis'),
         );
         $model->saveFilm($data);
         return redirect()->to('/Film');
@@ -32,9 +34,11 @@ class Film extends Controller{
         $model = new Film_model();
         $id = $this->request->getPost('Film_id');
         $data = array(
-            'Title' => $this->request->getPost('Title'),
-            'Rating' => $this->request->getPost('Rating'),
-            'Synopsis' => $this->request->getPost('Synopsis'),
+            'judul_vod' => $this->request->getPost('Title'),
+            'jenis_vod' => $this->request->getPost('Jenis'),
+            'genre_vod' => $this->request->getPost('Genre'),
+            'rating_vod' => $this->request->getPost('Rating'),
+            'desc_vod' => $this->request->getPost('Synopsis'),
         );
         $model->updateFilm($data,$id);
         return redirect()->to('/Film');
