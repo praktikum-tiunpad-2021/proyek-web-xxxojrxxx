@@ -52,7 +52,7 @@ body{
 }
 
 .nav__black{
-    background-color: #111;
+    background-color: #141414;
 }
 
 .container{
@@ -137,7 +137,6 @@ body{
 
 .image-home {
     position: relative;
-    
 }
 
 .title-desc{
@@ -179,7 +178,7 @@ body{
 
 .play-button{
     position: absolute;
-    margin-top: 3.5em;
+    margin-top: 3.5em;    
 }
 
 .watch-now{
@@ -194,6 +193,13 @@ body{
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+.watch-now:hover{
+    color: #000;
+    background-color: #F7971D;
+    transition: all 0.2s;
+}
+
 
 .row__posters{
     display: flex;
