@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -36,7 +36,7 @@ $routes->get('/admin', 'Login::admin_login');
 $routes->get('logout', 'Login::logout');
 $routes->match(['get','post'], 'register', 'Login::register');
 $routes->match(['get','post'], 'admin_register', 'Login::admin_register');
-$routes->get('dashboard', 'Dashboard::index',['filter' => 'auth']);
+$routes->get('dashboard', 'Dashboard::index',['a' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

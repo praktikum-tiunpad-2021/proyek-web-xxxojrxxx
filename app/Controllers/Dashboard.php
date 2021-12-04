@@ -10,7 +10,7 @@ class Dashboard extends BaseController
     public function index(){
         $model = new Film_model();
         $data['vod'] = $model->getFilm();
-        echo view('Home', $data);
+        echo view('Home.html', $data);
     }
     public function add_new(){
         echo view('add_film_view');

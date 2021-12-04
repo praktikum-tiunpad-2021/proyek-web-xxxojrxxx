@@ -41,7 +41,7 @@
                 </div>
             </div> 
             <?php if(isset($validation)) : ?>
-                <div class="sign-up" role="alert">
+                <div class="sign-up" style="color: #ffff;" role="alert">
                     <?= $validation->listErrors() ?>
                 </div>
             <?php endif; ?>

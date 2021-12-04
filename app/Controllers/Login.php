@@ -42,11 +42,11 @@ class Login extends BaseController{
         if($this->request->getMethod() == 'post'){
             $rules = [
                 'email' => 'required|min_length[6]|max_length[50]|valid_email',
-                'password' => 'required|min_length[8]|max_length[50]|validateUser[email,password]',
+                'password' => 'required|min_length[8]|max_length[50]|validateAdmin[email,password]',
             ];
             $errors = [
                 'password' => [
-                    'validateUser' => 'Email or Password don\'t match'
+                    'validateAdmin' => 'Email or Password don\'t match'
                 ]
             ];
             if(!$this->validate($rules, $errors)) {
@@ -96,7 +96,7 @@ class Login extends BaseController{
         if($this->request->getMethod( ) == 'post'){
             $rules = [
                 'username' => 'required|min_length[3]|max_length[50]',
-                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user.email]',
+                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
                 'telp' => 'required|min_length[8]|max_length[12]',
                 'password' => 'required|min_length[8]|max_length[50]',
                 'password_confirm' => 'matches[password]',
@@ -124,7 +124,7 @@ class Login extends BaseController{
         helper(['form']);
         if($this->request->getMethod( ) == 'post'){
             $rules = [
-                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user.email]',
+                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[admin.email]',
                 'password' => 'required|min_length[8]|max_length[50]',
                 'password_confirm' => 'matches[password]',
             ];
