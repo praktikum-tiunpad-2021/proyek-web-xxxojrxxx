@@ -7,13 +7,31 @@
     src:url("../fonts/montserrat.regular.ttf");
 }
 
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
 body{
+    font-family: 'Montserrat', sans-serif;
     background: #141414;
 }
 
 .nav__logo{
-    width: 90px;
+    width: 80px;
     object-fit: contain;
+}
+
+.nav__avatar{
+    border-radius: 100%;
+    width: 45px;
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 .nav__list{
@@ -42,7 +60,7 @@ body{
 .nav{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 68.75%;
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -227,4 +245,12 @@ body{
 .row-poster{
     color: white;
     margin-left: 20px;
+}
+
+.row-poster h4{
+    font-weight: 700;
+}
+
+.no-padding {
+    padding: 0 !important;
 }

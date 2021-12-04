@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src:url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src:url("../fonts/montserrat.regular.ttf");
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #141414;
+}
+
+.nav__logo{
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav__avatar{
+    border-radius: 100%;
+    width: 45px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.nav__list{
+    color: #fafafa;
+    margin: 0px;
+    float: left;
+}
+.nav__list li {
+    list-style: none;
+    float: left;
+}
+.nav__list li a {
+    color: #fff;
+    padding: 28px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.nav__list li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.nav{
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: #141414;
+}
+
+.container{
+    box-shadow: 0px 0px 50px 15px black;
+}
+
+.video_thumbnail{
+    margin-top: 3em;
+    margin-left: 3em;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 4em;
+}
+
+.desc{
+    color: #fafafa;
+    margin-top: 4em;
+    padding-left: 5em;
+}
+
+.desc h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.profile__pic{
+    padding: 2em;
+    margin: 4em;
+    margin-bottom: 8em;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10%;
+    background: url();
+    border-radius: 100%;
+}
+
+.profileid{
+    padding: 6em;
+    font-size: 25px;
+    color: #fafafa;
+}
+
+.tabel-col-1{
+    padding-right: 4em;
+}
+
+.tabel-col-2{
+    padding-right: 1em;
+}
+
+.edit-account{
+    margin-top: 2em;
+    font-size: 20px;
+    background-color: #F7971D;
+    border: 1px solid #F7971D;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #141414;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.no-padding {
+    padding: 0 !important;
+}

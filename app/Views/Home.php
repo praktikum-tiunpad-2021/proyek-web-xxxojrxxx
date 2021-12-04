@@ -4,16 +4,12 @@
         <title>Home Ntn.Ko</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../../assets/stylehome.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container no-padding">
+        <div class="container">
             <div class="nav" id="nav">
                 <img src="../../public/Assets/image/logo ntn.ko.png" alt="" class="nav__logo">
-                <img src="../../assets/images/profile.png" alt="" class="nav__avatar">
                 <!-- <ul class="nav__list">
                     <li><a href="#">Beranda</a></li>
                     <li><a href="#">Drama Korea</a></li>
@@ -36,8 +32,6 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            
                             <div class="title-desc">
                                 <span class="title-desc-1">Romance</span>
                                 <span class="title-desc-2">Action</span>
@@ -96,6 +90,7 @@
                 </div>
 
         </div>
+        <a href="/logout" >logout</a>
     <script>
         const nav = document.getElementById('nav');
 

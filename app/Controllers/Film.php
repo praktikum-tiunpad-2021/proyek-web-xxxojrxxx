@@ -8,7 +8,7 @@ class Film extends Controller{
     public function index(){
         $model = new Film_model();
         $data['film'] = $model->getFilm();
-        echo view('dashboard', $data);
+        echo view('home', $data);
     }
     public function add_new(){
         echo view('add_film_view');
@@ -32,7 +32,7 @@ class Film extends Controller{
     }
     public function update(){
         $model = new Film_model();
-        $id = $this->request->getPost('Film_id');
+        $id = $this->request->getPost('id_vod');
         $data = array(
             'judul_vod' => $this->request->getPost('Title'),
             'jenis_vod' => $this->request->getPost('Jenis'),
