@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="/Assets/assets/stylehome.css">
     </head>
 
-    <body>
-        <div class="container no-padding">
+    <body class="container no-padding">
+        <div>
             <div class="nav" id="nav">
                 <img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo">
                 <a href="/logout" >logout</a>

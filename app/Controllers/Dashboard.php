@@ -18,9 +18,13 @@ class Dashboard extends BaseController
     public function save(){
         $model = new Film_model();
         $data = array(
-            'Title' => $this->request->getPost('Title'),
-            'Rating' => $this->request->getPost('Rating'),
-            'Synopsis' => $this->request->getPost('Synopsis'),
+            'judul_vod' => $this->request->getPost('judul_vod'),
+            'rating_vod' => $this->request->getPost('rating_vod'),
+            'desc_vod' => $this->request->getPost('desc_vod'),
+            'genre_vod' => $this->request->getPost('genre_vod'),
+            'jenis_vod' => $this->request->getPost('jenis_vod'),
+            'img_vod' => $this->request->getPost('img_vod'),
+            'vod_link' => $this->request->getPost('vod_link'),
         );
         $model->saveFilm($data);
         return redirect()->to('/Film');
@@ -32,11 +36,15 @@ class Dashboard extends BaseController
     }
     public function update(){
         $model = new Film_model();
-        $id = $this->request->getPost('Film_id');
+        $id = $this->request->getPost('id_vod');
         $data = array(
-            'Title' => $this->request->getPost('Title'),
-            'Rating' => $this->request->getPost('Rating'),
-            'Synopsis' => $this->request->getPost('Synopsis'),
+            'judul_vod' => $this->request->getPost('judul_vod'),
+            'rating_vod' => $this->request->getPost('rating_vod'),
+            'desc_vod' => $this->request->getPost('desc_vod'),
+            'genre_vod' => $this->request->getPost('genre_vod'),
+            'jenis_vod' => $this->request->getPost('jenis_vod'),
+            'img_vod' => $this->request->getPost('img_vod'),
+            'vod_link' => $this->request->getPost('vod_link'),
         );
         $model->updateFilm($data,$id);
         return redirect()->to('/Film');
