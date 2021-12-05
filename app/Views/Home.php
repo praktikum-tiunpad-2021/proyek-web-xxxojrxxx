@@ -7,9 +7,11 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container no-padding">
             <div class="nav" id="nav">
                 <img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo">
+                <a href="/logout" >logout</a>
+                <img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar">
                 <!-- <ul class="nav__list">
                     <li><a href="#">Beranda</a></li>
                     <li><a href="#">Drama Korea</a></li>
@@ -88,9 +90,27 @@
                         <img src="/Assets/assets/images/Tomorrow_with_you.jpg" alt="" class="row__poster row__posterLarge">
                     </div>
                 </div>
-
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer-content">
+                    <h3>
+                        <img src="/Assets/image/logo ntn.ko.png">
+                        | Ntn.Ko
+                    </h3>
+                    <p>Ntn.Ko hadir sebagai Platform bagi para pecinta entertainment Korea dengan 
+                        menyediakan berbagai Drama dan Film Korea berbahasa Indonesia.</p>
+                    <ul class="socials">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    ntnko.com | Copyright &copy; 2021 Ntn.Ko
+                </div>
+            </div>
         </div>
-        <a href="/logout" >logout</a>
     <script>
         const nav = document.getElementById('nav');
 

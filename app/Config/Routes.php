@@ -33,6 +33,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
 $routes->get('/admin', 'Login::admin_login');
+$routes->get('/add', 'Dashboard::add_new');
+$routes->get('/save', 'Dashboard::save');
 $routes->get('logout', 'Login::logout');
 $routes->match(['get','post'], 'register', 'Login::register');
 $routes->match(['get','post'], 'admin_register', 'Login::admin_register');

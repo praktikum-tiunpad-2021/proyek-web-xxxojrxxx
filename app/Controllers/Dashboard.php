@@ -13,7 +13,7 @@ class Dashboard extends BaseController
         echo view('Home', $data);
     }
     public function add_new(){
-        echo view('add_film_view');
+        echo view('AddMovie');
     }
     public function save(){
         $model = new Film_model();
