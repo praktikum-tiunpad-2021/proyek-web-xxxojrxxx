@@ -12,6 +12,11 @@ class Dashboard extends BaseController
         $data['vod'] = $model->getFilm();
         echo view('Home', $data);
     }
+    public function home_admin(){
+        $model = new Film_model();
+        $data['vod'] = $model->getFilm();
+        echo view('HomeAdmin', $data);
+    }
     public function movie_page($id){
         $model = new Film_model();
         $data['vod'] = $model->getFilm($id)->getRow();

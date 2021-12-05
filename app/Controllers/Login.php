@@ -63,7 +63,7 @@ class Login extends BaseController{
                     setcookie('password', '');
                 }
                 //$session->setFlashdata('success','Successful Registration');
-                return redirect()->to('dashboard')->withCookies();
+                return redirect()->to('dashboard/home_admin')->withCookies();
             }
         }
         return view('admin', $data);
@@ -83,7 +83,6 @@ class Login extends BaseController{
         $data = [
             'email' => $user['email'],
             'username' => 'admin',
-            'telp' => '0',
             'isLoggedIn' => true,
             'admin' => true,
         ];

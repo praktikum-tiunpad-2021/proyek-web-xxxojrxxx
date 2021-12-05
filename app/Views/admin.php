@@ -22,7 +22,7 @@
             </div>
         <?php endif; ?>
     <!-- ***** Login Start ***** -->    
-    <form action="/" method="post"> 
+    <form action="/login/admin_login" method="post"> 
         
     <div class="login-div">
         <div class="login-form">

@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 class Admin_model extends model{
     protected $table = 'admin';
     protected $primaryKey = 'id_admin';
-    protected $allowedFields = ['username','password'];
+    protected $allowedFields = ['email','password'];
     protected $beforeInsert = ['beforeInsert'];
     protected $beforeUpdate = ['beforeUpdate'];
     protected function beforeInsert(array $data){
