@@ -21,25 +21,23 @@
 
             <div class="row">
                 <div class="video">
-                    <iframe width="1320" height="705" src="https://www.youtube.com/embed/wkHjOTFv60g" class="video_preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1320" height="705" src="<?= $vod->vod_link; ?>" class="video_preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-2">
-                    <img class="video_thumbnail" src="/Assets/assets/images/video1.png">
+                    <img class="video_thumbnail" src="<?= $vod->img_vod; ?>">
                 </div>
                 <div class="col-10">
                     <div class="desc">
-                        <h1>Descendants of the Sun</h1>
+                        <h1><?= $vod->judul_vod; ?></h1>
                         <div class="row">
                             <div class="col-10">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <strong>Jenis : </strong><br/>
-                                <strong>Genre : </strong><br/>
-                                <strong>Ntn.Ko rating : </strong>
+                                <p><?= $vod->desc_vod; ?></p>
+                                <strong>Jenis : <?= $vod->jenis_vod; ?></strong><br/>
+                                <strong>Genre : <?= $vod->genre_vod; ?></strong><br/>
+                                <strong>Ntn.Ko rating : <?= $vod->rating_vod; ?></strong>
                             </div>
                         </div>
                         

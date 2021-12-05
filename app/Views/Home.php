@@ -13,7 +13,7 @@
                 <a href="/logout" >logout</a>
                 <img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar">
                 <!-- <ul class="nav__list">
-                    <li><a href="#">Beranda</a></li>
+                    <li><a href="/dashboard">Beranda</a></li>
                     <li><a href="#">Drama Korea</a></li>
                     <li><a href="#">Film Korea</a></li>
                     <li><a href="#">Daftar Saya</a></li>
@@ -36,7 +36,7 @@
                                 laboris nisi ut aliquip ex ea commodo consequat.
                             <div class="title-desc">
                                 <span class="title-desc-1">Romance</span>
-                                <span class="title-desc-2">Action</span>
+                                <!-- <span class="title-desc-2">Action</span> -->
                             </div>
                             <div class="play-button">
                                 <button class="watch-now">Watch Now</button>
@@ -50,22 +50,9 @@
                 <div class="row-poster">
                     <h4 style="color: #fafafa; padding-top: 1em;">Populer di Ntn.Ko</h4>
                     <div class="row__posters">
-                        <img src="/Assets/assets/images/Goblin.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Memories_of_the_alhambra.jpg" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/my_name.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/nevertheless.jpeg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/record-of-youth.jpeg" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Start_up.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/sweet-home.jpeg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Tomorrow_with_you.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Goblin.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Memories_of_the_alhambra.jpg" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/my_name.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/nevertheless.jpeg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/record-of-youth.jpeg" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Start_up.jpg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/sweet-home.jpeg" alt="" class="row__poster row__posterLarge">
-                        <img src="/Assets/assets/images/Tomorrow_with_you.jpg" alt="" class="row__poster row__posterLarge">
+                        <?php foreach($vod as $row) : ?>
+                            <a href="/dashboard/movie_page/<?= $row['id_vod']; ?>"><img src="<?= $row['img_vod']; ?>" class="row__poster row__posterLarge"></a>
+                        <?php endforeach;?>
                     </div>
                 </div>
 

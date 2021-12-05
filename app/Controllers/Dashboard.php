@@ -12,6 +12,11 @@ class Dashboard extends BaseController
         $data['vod'] = $model->getFilm();
         echo view('Home', $data);
     }
+    public function movie_page($id){
+        $model = new Film_model();
+        $data['vod'] = $model->getFilm($id)->getRow();
+        echo view('MoviePage', $data);
+    }
     public function add_new(){
         echo view('AddMovie');
     }
@@ -27,7 +32,7 @@ class Dashboard extends BaseController
             'vod_link' => $this->request->getPost('vod_link'),
         );
         $model->saveFilm($data);
-        return redirect()->to('/Film');
+        return redirect()->to('/dashboard');
     }
     public function edit($id){
         $model = new Film_model();
@@ -47,11 +52,11 @@ class Dashboard extends BaseController
             'vod_link' => $this->request->getPost('vod_link'),
         );
         $model->updateFilm($data,$id);
-        return redirect()->to('/Film');
+        return redirect()->to('/dashboard');
     }
     public function delete($id){
         $model = new Film_model();
         $model->deleteFilm($id);
-        return redirect()->to('/Film');
+        return redirect()->to('/dashboard');
     }
 }
