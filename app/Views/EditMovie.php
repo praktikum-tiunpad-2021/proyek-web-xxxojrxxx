@@ -12,61 +12,62 @@
     <body>
         <div style="color: #F7971D; padding-top: 15em; padding-bottom: 15em;" class="container">
             <div class="row mt-12">
-            <form method="post" action="dashboard/save">
+            <form method="post" action="/dashboard/update">
                     <div class="row mt-6">
                         <div class="col">
                             <label for="judul" class="form-label">Judul VOD</label>
-                            <input type="text" id="judul" name="judul_vod" class="form-control" placeholder="Masukkan judul VOD">
+                            <input type="text" id="judul" name="judul_vod" class="form-control" value="<?= $vod->judul_vod ?>">
                         </div>
                         <div class="col">
                             <label for="link" class="form-label">Link VOD</label>
-                            <input type="text" id="link" name="vod_link" class="form-control" placeholder="Masukkan link VOD">
+                            <input type="text" id="link" name="vod_link" class="form-control" value="<?= $vod->vod_link ?>">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <label for="jenis">Jenis VOD</label>
                             <select name="jenis_vod" id="jenis" class="form-select">
-                                <option value="">- Pilih Jenis VOD -</option>
-                                <option value="Drama">Drama</option>
-                                <option value="Film">Film</option>
+                                <option value="Drama" <?php if ($vod->jenis_vod == "Drama") echo "selected" ?> >Drama</option>
+                                <option value="Film" <?php if ($vod->jenis_vod == "Film") echo "selected" ?>>Film</option>
                             </select>
                         </div>
                         <div class="col">
                             <label for="genre">Genre VOD</label>
-                            <select name="genre_vod" id="genre" class="form-select">
-                                <option value="">- Pilih Genre VOD -</option>
-                                <option value="Action">Action</option>
-                                <option value="Romance">Romance</option>
-                                <option value="Horror">Horror</option>
-                                <option value="Thriller">Thriller</option>
+                            <select name="genre_vod" id="genre" value="<?= $vod->genre_vod ?>" class="form-select">
+                                <option value="Action" <?php if ($vod->genre_vod == "Action") echo "selected" ?>>Action</option>
+                                <option value="Romance" <?php if ($vod->genre_vod == "Romance") echo "selected" ?>>Romance</option>
+                                <option value="Horror" <?php if ($vod->genre_vod == "Horror") echo "selected" ?>>Horror</option>
+                                <option value="Thriller" <?php if ($vod->genre_vod == "Thriller") echo "selected" ?>>Thriller</option>
                             </select>
                         </div>
                         <div class="col">
                             <label for="rating">Rating VOD</label>
-                            <input type="text" class="form-control" id="rating_vod" name="rating_vod" placeholder="Rating VOD (maks. 5)">
+                            <input type="text" class="form-control" id="rating_vod" name="rating_vod" value="<?= $vod->rating_vod ?>">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <label for="desc">Sinopsis VOD</label>
-                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control" placeholder="Masukkan sinopsis VOD"></textarea>
+                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control" value="<?= $vod->desc_vod ?>"></textarea>
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col">
-                            <label for="img">Input Link thumbnail VOD :</label>
-                            <input type="text" id="img" name="img_vod" class="form-control">
+                        <div class="col-10">
+                            <label for="img">Link thumbnail VOD :</label>
+                            <input type="text" id="img" name="img_vod" value="<?= $vod->img_vod ?>" class="form-control">
+                        </div>
+                        <div class="col-2">
+                            <label for="id_admin">ID Admin :</label>
+                            <input type="text" name="id_admin" value="<?= $vod->id_admin ?>" class="form-control" readonly>
                         </div>
                     </div>
-
-                    <input type="hidden" name="id_admin" value="1">
 
                     <div class="row mt-4">
                         <div class="col">
-                            <button class="watch-now" type="submit">Save</button>
+                            <button class="watch-now" type="submit">Update</button>
                         </div>
                     </div>
+                    <input type="hidden" name="id_vod" value="<?= $vod->id_vod ?>">
                 </form>
             </div>
         </div>

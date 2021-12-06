@@ -18,4 +18,12 @@ class Admin_model extends model{
 
         return $data;
     }
+
+    public function getAdmin($id = false){
+        if($id === false){
+            return $this->findAll();
+        }else {
+            return $this->getWhere(['id_admin' => $id]);
+        }
+    }
 }

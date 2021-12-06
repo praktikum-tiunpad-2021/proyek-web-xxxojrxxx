@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Montserrat-Bold;
-    src:url("../fonts/Montserrat-Bold.ttf");
-}
-@font-face {
-    font-family: Montserrat-Regular;
-    src:url("../fonts/montserrat.regular.ttf");
-}
-
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -18,63 +9,13 @@ body {
   }
 
 body{
+    color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     background: #141414;
 }
 
-.nav__logo{
-    width: 80px;
-    object-fit: contain;
-}
-
-.nav__avatar{
-    border-radius: 100%;
-    width: 45px;
-    object-fit: contain;
-    margin-right: 20px;
-}
-
-.nav__list{
-    color: #fafafa;
-    margin: 0px;
-    float: left;
-}
-.nav__list li {
-    list-style: none;
-    float: left;
-}
-.nav__list li a {
-    color: #fff;
-    padding: 28px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
-.nav__list li a i {
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 7px;
-}
-
-.nav{
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    z-index: 1;
-    transition-timing-function: ease-in;
-    transition: all 0.5s;
-}
-
-.nav__black{
-    background-color: #141414;
-}
-
 .container{
-    box-shadow: 0px 0px 50px 15px black;
+    /* box-shadow: 0px 0px 50px 15px black; */
 }
 
 .video_thumbnail{
@@ -214,4 +155,44 @@ body{
     color: #000;
     background-color: #F7971D;
     transition: all 0.2s;
+}
+
+td{
+    border-bottom: 1px solid #F7971D;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 165px;
+    height: 50px;
+}
+
+.little-button{
+    background-color: transparent;
+    border: 0px solid #F7971D;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #F7971D;
+    font-weight: bold;
+    width: 5.5em;
+    height: 2em;
+}
+
+tr:nth-child(even) {
+    background-color: #222222;
+}
+
+.little-button:hover{
+    border: 0px solid #F7971D;
+    box-sizing: border-box;
+    color: #fafafa;
+    transition: all 0.2s;
+}
+
+th{
+    background-color: #F7971D;
+    color: #141414;
+}
+
+a {
+    text-decoration: none;
 }

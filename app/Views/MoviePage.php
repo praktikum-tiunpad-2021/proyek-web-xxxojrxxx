@@ -13,7 +13,7 @@
         <div class="container no-padding">
             <div class="row">
                 <div class="nav" id="nav">
-                <img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo">
+                <a href="/dashboard"><img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo"></a>
                 <a href="/logout" >logout</a>
                 <img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar">
                 </div>
@@ -33,8 +33,8 @@
                     <div class="desc">
                         <h1><?= $vod->judul_vod; ?></h1>
                         <div class="row">
-                            <div class="col-10">
-                                <p><?= $vod->desc_vod; ?></p>
+                            <div style="padding-bottom: 4em;" class="col-11">
+                                <p style="text-align: justify;"><?= $vod->desc_vod; ?></p>
                                 <strong>Jenis : <?= $vod->jenis_vod; ?></strong><br/>
                                 <strong>Genre : <?= $vod->genre_vod; ?></strong><br/>
                                 <strong>Ntn.Ko rating : <?= $vod->rating_vod; ?></strong>

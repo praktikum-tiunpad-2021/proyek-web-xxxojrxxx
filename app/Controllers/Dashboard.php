@@ -35,14 +35,15 @@ class Dashboard extends BaseController
             'jenis_vod' => $this->request->getPost('jenis_vod'),
             'img_vod' => $this->request->getPost('img_vod'),
             'vod_link' => $this->request->getPost('vod_link'),
+            'id_admin' => $this->request->getPost('id_admin'),
         );
         $model->saveFilm($data);
-        return redirect()->to('/dashboard');
+        return redirect()->to('/dashboard/home_admin');
     }
     public function edit($id){
         $model = new Film_model();
         $data['vod'] = $model->getFilm($id)->getRow();
-        echo view('edit_film_view', $data);
+        echo view('EditMovie', $data);
     }
     public function update(){
         $model = new Film_model();
@@ -55,13 +56,14 @@ class Dashboard extends BaseController
             'jenis_vod' => $this->request->getPost('jenis_vod'),
             'img_vod' => $this->request->getPost('img_vod'),
             'vod_link' => $this->request->getPost('vod_link'),
+            'id_admin' => $this->request->getPost('id_admin'),
         );
         $model->updateFilm($data,$id);
-        return redirect()->to('/dashboard');
+        return redirect()->to('/dashboard/home_admin');
     }
     public function delete($id){
         $model = new Film_model();
         $model->deleteFilm($id);
-        return redirect()->to('/dashboard');
+        return redirect()->to('/dashboard/home_admin');
     }
 }

@@ -10,66 +10,44 @@
     </head>
 
     <body>
-        <div class="container no-padding">
-            <div class="card mt-4 mx-4">
-                <div class="card-header bg-success text-white">
-                    Data Mahasiswa
-                </div>
-                <div class="card-body">
-                    <table class="table table-bordered table-striped">
+        <div class="container">
+            <div class="row mt-4">
+                    <table>
                         <tr>
                             <th>No</th>
-                            <th>Judul VOD</th>
-                            <th>Nomor Penghargaan</th>
-                            <th>Jenis Penghargaan</th>
-                            <th>Tanggal Penghargaan</th>
-                            <th>Action</th>
+                            <th>Judul</th>
+                            <th>Link</th>
+                            <th>Jenis</th>
+                            <th>Genre</th>
+                            <th>Rating</th>
+                            <th>Sinopsis</th>
+                            <th>Thumbnail</th>
+                            <th style="text-align: center;">Admin</th>
+                            <th style="text-align: center;">Action</th>
                         </tr>
-                        <?php
-                        $conn = mysqli_connect('localhost', 'root', '', 'tugas-6-prak-pemweb');
-                        $select   = "SELECT * FROM penghargaan order by id DESC";
-                        $query     = mysqli_query($conn, $select);
-                        $urut   = 1;
-                        while ($row = mysqli_fetch_array($query)) {
-                            $id         = $row['id'];
-                            $nama       = $row['nama'];
-                            $nomor      = $row['nomor'];
-                            $jenis      = $row['jenis'];
-                            $tanggal    = $row['tanggal'];
-                        ?>
+                            <?php $no = 1; foreach ($vod as $row) : ?>
                             <tr>
-                                <td><?php echo $urut++ ?></td>
-                                <td><?php echo $nama ?></td>
-                                <td><?php echo $nomor ?></td>
-                                <td><?php echo $jenis ?></td>
-                                <td><?php echo $tanggal ?></td>
-                                <td>
-                                    <a href="/penghargaan/edit/<?php echo $id ?>"><button type="button" class="btn btn-warning">Edit</button></a>
-                                    <a href="/penghargaan/delete/<?php echo $id ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
+                                <td style="text-align: center;"><?= $no++ ?></td>
+                                <td><?= $row['judul_vod'] ?></td>
+                                <td><?= $row['vod_link'] ?></td>
+                                <td><?= $row['jenis_vod'] ?></td>
+                                <td><?= $row['genre_vod'] ?></td>
+                                <td><?= $row['rating_vod'] ?></td>
+                                <td><?= $row['desc_vod'] ?></td>
+                                <td><?= $row['img_vod'] ?></td>
+                                <td style="text-align: center;"><?= $row['id_admin'] ?></td>
+                                <td style="text-align: center;">
+                                    <a class="little-button" href="/dashboard/edit/<?= $row['id_vod']; ?>">Edit</a>
+                                    <a class="little-button" onclick="return confirm('Apakah anda yakin ingin menghapus data?')" href="/dashboard/delete/<?= $row['id_vod']; ?>"">Delete</a>
                                 </td>
                             </tr>
-                        <?php
-                        }
-                        ?>
+                            <?php endforeach; ?>
                     </table>
-                </div>
             </div>
             <!-- Akhir Tabel -->
         </div>
-        <div class="container-fluid mt-4">
-            <a class="btn btn-warning mx-4" href="/penghargaan/add_new/">Tambah</a>
+        <div class="container mt-4">
+            <a class="watch-now" href="/add">Tambah</a>
         </div>
-    <script>
-        const nav = document.getElementById('nav');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY >=100){
-                nav.classList.add('nav__black');
-            }else{
-                nav.classList.remove('nav__black');
-            }
-        })
-    </script>
-
     </body>
 </html>
