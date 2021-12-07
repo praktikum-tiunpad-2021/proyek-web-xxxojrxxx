@@ -4,21 +4,20 @@
         <title>Home Ntn.Ko</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="/Assets/assets/stylehome.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
-    <body class="container no-padding">
-        <div>
-            <div class="nav" id="nav">
-                <img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo">
-                <a href="/logout" >logout</a>
-                <img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar">
-                <!-- <ul class="nav__list">
-                    <li><a href="/dashboard">Beranda</a></li>
-                    <li><a href="#">Drama Korea</a></li>
-                    <li><a href="#">Film Korea</a></li>
-                    <li><a href="#">Daftar Saya</a></li>
-                </ul> -->
-            </div>
+    <body>
+        <div class="container no-padding">
+                <div class="nav" id="nav">
+                    <ul>
+                        <li style="float: left;"><a href="/dashboard"><img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo"></a></li>
+                        <li style="float: right;"><a href="/dashboard/profile/<?= session()->get('id'); ?>"><img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar"></a></li>
+                        <li style="float: right;"><a href="/logout" class="nav__logout">Logout</a></li>
+                    </ul>
+                </div>
                 <div class="row">
                     <img class="image-home" src="/Assets/assets/image 5.png">
                     <div>
@@ -31,9 +30,9 @@
                         </div>
                         <div class="title-text">
                             <h1>Descendants of the Sun</h1>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat.
+                            A soldier belonging to the South Korean Special Forces falls in 
+                            love with a beautiful surgeon. However, their relationship is 
+                            short-lived as their professions keep them apart.
                             <div class="title-desc">
                                 <span class="title-desc-1">Romance</span>
                                 <!-- <span class="title-desc-2">Action</span> -->

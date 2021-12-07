@@ -16,11 +16,11 @@
                     <div class="row mt-6">
                         <div class="col">
                             <label for="judul" class="form-label">Judul VOD</label>
-                            <input type="text" id="judul" name="judul_vod" class="form-control" placeholder="Masukkan judul VOD">
+                            <input type="text" id="judul" name="judul_vod" class="form-control" placeholder="Masukkan judul VOD...">
                         </div>
                         <div class="col">
                             <label for="link" class="form-label">Link VOD</label>
-                            <input type="text" id="link" name="vod_link" class="form-control" placeholder="Masukkan link VOD">
+                            <input type="text" id="link" name="vod_link" class="form-control" placeholder="Masukkan link VOD... (embed)">
                         </div>
                     </div>
                     <div class="row mt-4">
@@ -44,19 +44,19 @@
                         </div>
                         <div class="col">
                             <label for="rating">Rating VOD</label>
-                            <input type="text" class="form-control" id="rating_vod" name="rating_vod" placeholder="Rating VOD (maks. 5)">
+                            <input type="text" class="form-control" id="rating_vod" name="rating_vod" placeholder="Rating VOD... (maks. 5)">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <label for="desc">Sinopsis VOD</label>
-                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control" placeholder="Masukkan sinopsis VOD"></textarea>
+                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control" placeholder="Masukkan sinopsis VOD..."></textarea>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <label for="img">Input Link thumbnail VOD :</label>
-                            <input type="text" id="img" name="img_vod" class="form-control">
+                            <input type="text" id="img" name="img_vod" class="form-control" placeholder="Masukkan link thumbnail VOD...">
                         </div>
                     </div>
 

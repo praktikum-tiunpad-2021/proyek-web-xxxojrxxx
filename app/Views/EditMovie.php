@@ -48,7 +48,7 @@
                     <div class="row mt-4">
                         <div class="col">
                             <label for="desc">Sinopsis VOD</label>
-                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control" value="<?= $vod->desc_vod ?>"></textarea>
+                            <textarea rows="4" cols="50" id="desc" name="desc_vod" class="form-control"><?= $vod->desc_vod ?></textarea>
                         </div>
                     </div>
                     <div class="row mt-4">

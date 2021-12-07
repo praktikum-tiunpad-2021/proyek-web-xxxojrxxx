@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <title>ntn.ko</title>
 
@@ -40,11 +42,8 @@
     </div>
 
     <div class="sign-in">
-        <a href="/"><button class="signin-btn" ><label class="signin-font">MASUK</label></button></a>
+        <a href="/login"><button class="signin-btn" ><label class="signin-font">MASUK</label></button></a>
     </div>
-
-
-    
 
     <!-- ***** Landing End ***** -->
     </body>

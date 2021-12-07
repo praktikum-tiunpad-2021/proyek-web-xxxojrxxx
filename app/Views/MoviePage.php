@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Ntn.Ko</title>
+        <title><?= $vod->judul_vod; ?></title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="/Assets/assets/stylevideo.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,13 +11,13 @@
 
     <body>
         <div class="container no-padding">
-            <div class="row">
                 <div class="nav" id="nav">
-                <a href="/dashboard"><img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo"></a>
-                <a href="/logout" >logout</a>
-                <img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar">
+                    <ul>
+                        <li style="float: left;"><a href="/dashboard"><img src="/Assets/image/logo ntn.ko.png" alt="logo.png" class="nav__logo"></a></li>
+                        <li style="float: right;"><a href="/dashboard/profile/<?= session()->get('id'); ?>"><img src="/Assets/assets/images/profile.png" alt="" class="nav__avatar"></a></li>
+                        <li style="float: right;"><a href="/logout" class="nav__logout">Logout</a></li>
+                    </ul>
                 </div>
-            </div>
 
             <div class="row">
                 <div class="video">

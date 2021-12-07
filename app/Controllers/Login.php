@@ -3,6 +3,11 @@ namespace App\Controllers;
 use App\models\User_model;
 use App\models\Admin_model;
 class Login extends BaseController{
+
+    public function landing(){
+        echo view('Landing');
+    }
+
     public function index(){
         $data = [];
         helper(['form']);
@@ -70,6 +75,7 @@ class Login extends BaseController{
     }
     private function setUserSession($user){
         $data = [
+            'id' => $user['id'],
             'email' => $user['email'],
             'username' => $user['username'],
             'telp' => $user['telp'],
@@ -81,6 +87,7 @@ class Login extends BaseController{
     }
     private function setAdminSession($user){
         $data = [
+            'id' => $user['id_admin'],
             'email' => $user['email'],
             'username' => 'admin',
             'isLoggedIn' => true,

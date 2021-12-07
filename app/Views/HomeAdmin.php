@@ -48,6 +48,7 @@
         </div>
         <div class="container mt-4">
             <a class="watch-now" href="/add">Tambah</a>
+            <a style="margin-left: 60em" class="watch-now" href="/logout">Logout</a>
         </div>
     </body>
 </html>

@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Montserrat-Bold;
-    src:url("../fonts/Montserrat-Bold.ttf");
-}
-@font-face {
-    font-family: Montserrat-Regular;
-    src:url("../fonts/montserrat.regular.ttf");
-}
-
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -28,46 +19,46 @@ body{
     object-fit: contain;
 }
 
+.nav__logout {
+    margin-top: 0.7em;
+    padding-left: 65em;
+    font-weight: 700;
+    color: #F7971D;
+}
+
+.nav__logout:hover {
+    color: #fafafa;
+    transition: all 0.2s;
+}
+
 .nav__avatar{
     border-radius: 100%;
     width: 45px;
     object-fit: contain;
-    margin-right: 20px;
+    margin-left: 1em;
+    margin-right: 1.8em;
 }
 
-.nav__list{
-    color: #fafafa;
-    margin: 0px;
-    float: left;
-}
-.nav__list li {
-    list-style: none;
-    float: left;
-}
-.nav__list li a {
-    color: #fff;
-    padding: 28px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
-.nav__list li a i {
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 7px;
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav{
     position: fixed;
     top: 0;
-    width: 68.75%;
-    display: flex;
-    justify-content: space-between;
+    max-width: auto;
     padding: 25px;
     z-index: 1;
     transition-timing-function: ease-in;
     transition: all 0.5s;
+}
+
+.nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .nav__black{
@@ -175,7 +166,10 @@ body{
 }
 
 .title-desc-1{
+    box-sizing: border-box;
+    border-radius: 100px;
     position: absolute;
+    padding: 0.4em;
     width: 8em;
     height: 2em;
     text-align: center;
